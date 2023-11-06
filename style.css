@@ -13,7 +13,7 @@ a {
     color: white;
 }
 
-footer, .one-sec, .two-sec, .thr-sec, .four-sec, .top-header, .top-links, .contactform{
+footer, .one-sec, .two-sec, .thr-sec, .four-sec, .top-header, .top-links, .contactform, .sec2-imgs, .titleNpicture, .titleNtext{
     display: flex;
 }
 
@@ -22,12 +22,33 @@ footer {
     justify-content: center;
     padding: 14px;
     margin: 0;
-    background-color: blueviolet;
+    background-color: #BD93BD;
     margin-top: 35px;
 }
 
 .one-sec {
     flex-direction: column;
+
+}
+
+.titleNpicture {
+    flex-direction: column;
+
+}
+
+.two-sec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 12px;
+    background-color: #BD93BD;
+}
+
+.thr-sec {
+    background-color: black;
+    color: white;
+    padding: 32px;
+    margin: 0;
 }
 
 .four-sec {
@@ -42,7 +63,7 @@ footer {
 .top-header {
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #221E22;
     color: white;
     padding: 16px;
 }
@@ -60,16 +81,50 @@ footer {
 
 .title {
     color: aqua;
-    font-size: larger;
+    font-size: 32px;
     font-weight: 700;
 }
 
 .top-text{
     color: darkgoldenrod;
     font-weight: 400;
-    
+    font-size: 24px;
 }
 
 .contactform {
-    flex-direction: row;
+    flex-direction: column;
+    gap: 12px;
+
 }
+
+.sec2-imgs{
+    flex-flow: row wrap;
+    gap: 12px;
+}  
+
+.sec2-title {
+    
+}
+
+.learnMbutton {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #1a5780;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+  /* Button Hover Effect */
+.learnMbutton:hover {
+    background-color: #2980b9; /* Change to a slightly different color on hover */
+}
+
+  .titleNtext {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
