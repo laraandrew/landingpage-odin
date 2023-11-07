@@ -128,3 +128,8 @@ footer {
     justify-content: space-between;
     gap: 8px;
   }
+
+img {
+    width: 300px;
+    height: auto;
+}
