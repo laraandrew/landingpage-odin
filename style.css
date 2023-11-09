@@ -1,6 +1,11 @@
-body {
+body, footer, .one-sec, .two-sec, .thr-sec, .four-sec, .top-header, .top-links, .contactform, .sec2-imgs, .titleNpicture, .titleNtext{
     display: flex;
+}
+.one-sec, .two-sec, .thr-sec , .four-sec, .contactform, .titleNtext, body{
     flex-direction: column;
+}
+
+body {
     margin: 0;
 }
 
@@ -13,60 +18,17 @@ a {
     color: white;
 }
 
-footer, .one-sec, .two-sec, .thr-sec, .four-sec, .top-header, .top-links, .contactform, .sec2-imgs, .titleNpicture, .titleNtext{
-    display: flex;
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    align-items: center;
-    justify-content: center;
-    padding: 14px;
-    margin: 0;
-    background-color: #BD93BD;
-    margin-top: 35px;
-}
-
-.one-sec {
-    flex-direction: column;
-    background-color: #5E8C61;
-
-}
-
-.titleNpicture {
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 20px;
-    padding: 32px
-
-}
-
-.title_pic {
-    flex-shrink: 1;
-    flex-grow: 0;
-}
-
-.two-sec {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    gap: 12px;
-    background-color: #BD93BD;
-}
-
-.thr-sec {
-    background-color: black;
-    color: white;
-    padding: 32px;
-    margin: 0;
-}
-
-.four-sec {
-    flex-direction: column;
-    align-items: center;
-    background-color: blanchedalmond;
-    gap: 22px;
-    padding: 35px;
-    margin:0;
+li {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .top-header {
@@ -78,14 +40,16 @@ footer {
 }
 
 .top-links {
-    gap: 12px;
-    padding: 14px;
+    gap: 32px;
     margin: 0;
+    padding-right: 24px;
 }
 
 .header {
     font-weight: 900;
     font-size: xx-large;
+    margin-left: 45px;
+    padding: 12px 0;
 }
 
 .title {
@@ -103,10 +67,28 @@ footer {
     text-align: center;
 }
 
-.contactform {
-    flex-direction: column;
-    gap: 12px;
+.one-sec {
+    background-color: #5E8C61;
 
+}
+
+.titleNpicture {
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 32px
+}
+
+.title_pic {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.two-sec {
+    justify-content: center;
+    align-items: center; 
+    gap: 12px;
+    background-color: #BD93BD;
 }
 
 .sec2-imgs{
@@ -120,6 +102,46 @@ footer {
     text-align: center;
     color: black;
     padding-top: 20px;
+}
+
+.thr-sec {
+    background-color: black;
+    color: white;
+    padding: 55px;
+    margin: 0;
+
+}
+
+.sec3-quote {
+    text-align: center;
+    align-self: center;
+    word-spacing: 8px;
+    line-height: 80px;
+    padding: 12px;
+}
+
+.sec3-author {
+    align-self: center;
+}
+
+.four-sec {
+    align-items: center;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    gap: 22px;
+    padding: 35px;
+    margin:0;
+}
+
+.contactusTitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.contactform {
+    gap: 12px;
+
 }
 
 .learnMbutton {
@@ -139,21 +161,18 @@ footer {
 }
 
 .titleNtext {
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
     flex-basis: 600px;
 }
 
-img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
 
-li {
-    text-align: center;
-}
 
+footer {
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    margin: 0;
+    background-color: #BD93BD;
+}
