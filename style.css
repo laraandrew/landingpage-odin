@@ -1,6 +1,11 @@
 body, footer, .one-sec, .two-sec, .thr-sec, .four-sec, .top-header, .top-links, .contactform, .sec2-imgs, .titleNpicture, .titleNtext{
     display: flex;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 .one-sec, .two-sec, .thr-sec , .four-sec, .contactform, .titleNtext, body{
     flex-direction: column;
 }
@@ -129,8 +134,13 @@ li {
     color: white;
     padding: 55px;
     margin: 0;
+    transition: black 0.5s ease-in-out;
+    
 }
 
+.thr-sec:hover {
+    background-color: #221E22;
+}
 
 .sec3-quote {
     text-align: center;
